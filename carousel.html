@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image-Slider</title>
+    <link rel="stylesheet" href="./css/carouselstyle.css" />
+    <script src="./js/carouselscript.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="slideContainer">
+      <div class="slides">
+        <img class="image active" src="./images/image1.jpg" />
+        <img class="image" src="./images/image2.jpg" />
+        <img class="image" src="./images/image3.jpg" />
+        <img class="image" src="./images/image4.jpg" />
+        <img class="image" src="./images/image5.jpg" />
+        <img class="image" src="./images/image6.jpg" />
+        <img class="image" src="./images/image7.jpg" />
+        <img class="image" src="./images/image8.jpg" />
+        <img class="image" src="./images/image9.jpg" />
+        <img class="image" src="./images/image10.jpg" />
+      </div>
+      <div class="buttons">
+        <span id="next">&#8658;</span>
+        <span id="prev">&#8656;</span>
+      </div>
+
+      <div class="dotsContainer">
+        <div class="dot active" attr="0" onclick="switchImage(this)"></div>
+        <div class="dot" attr="1" onclick="switchImage(this)"></div>
+        <div class="dot" attr="2" onclick="switchImage(this)"></div>
+        <div class="dot" attr="3" onclick="switchImage(this)"></div>
+        <div class="dot" attr="4" onclick="switchImage(this)"></div>
+        <div class="dot" attr="5" onclick="switchImage(this)"></div>
+        <div class="dot" attr="6" onclick="switchImage(this)"></div>
+        <div class="dot" attr="7" onclick="switchImage(this)"></div>
+        <div class="dot" attr="8" onclick="switchImage(this)"></div>
+        <div class="dot" attr="9" onclick="switchImage(this)"></div>
+      </div>
+    </div>
+    <div class="userControl">
+      <button class="controlButton" id="stopButton" onclick="stopInterval()">
+        Stop
+      </button>
+      <button class="controlButton" id="startButton" onclick="startInterval()">
+        Start
+      </button>
+
+      <form class="formTimer">
+        <label for="timer">Timer:</label>
+        <input id="timerInput" type="text" />
+        <button id="submitButton">Set Timer</button>
+      </form>
+    </div>
+  </body>
+</html>

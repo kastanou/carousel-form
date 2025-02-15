@@ -1,0 +1,63 @@
+.contactForm {
+  font-family: "Oswald", serif;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 130vh;
+  padding-right: 1rem;
+  padding-top: 4rem;
+  gap: 1rem;
+}
+.form-container {
+  color: black;
+  height: 40vh;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="tel"],
+select,
+textarea {
+  color: black;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+::placeholder {
+  color: black;
+}
+input[type="submit"] {
+  cursor: pointer;
+  border: none;
+  color: black;
+  background-color: #c06b32;
+  padding: 5px 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  max-width: 8rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #eb6341;
+}
+.hidden {
+  display: none;
+}
+
+.error {
+  font-weight: bold;
+  border-color: #c92432;
+  border-radius: 16px;
+  color: #c92432;
+  background-color: #fffafa;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
